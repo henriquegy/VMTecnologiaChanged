@@ -1,0 +1,10 @@
+<% details.each do |order| %>
+    <tr>
+        <th scope="row">-</th>
+        <td><%= order[order_type[:operator_id]] %></td>
+        <td><%= order[order_type[:customer_id]] %></td>
+        <td><%= order[order_type[:location_id]] %></td>
+        <td><%= order[order_type[:value]] %></td>
+        <td><%= order[order_type[:status]] %></td>
+    </tr>
+<% end %>
